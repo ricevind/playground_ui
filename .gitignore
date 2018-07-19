@@ -1,2 +1,5 @@
-node_modules
-dist
+playground-js/node_modules
+playground-js/dist
+
+playground-angular/node_modules
+playground-angular/dist
