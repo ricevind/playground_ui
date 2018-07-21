@@ -1,0 +1,11 @@
+<mat-sidenav-container
+  [hasBackdrop]="true"
+  (backdropClick)="onBackdropClick()"
+>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+  <mat-sidenav [opened]="isSidenavOpen$ | async">
+    <ng-content select="[sidenav]"></ng-content>
+  </mat-sidenav>
+</mat-sidenav-container>
