@@ -1,0 +1,22 @@
+:host {
+    display: block;
+}
+
+.pg-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.pg-container-main {
+    height: 100vh;
+    align-items: stretch;
+}
+
+.pg-container-header,
+.pg-container-footer {
+    flex: 0 0 auto;
+}
+
+.pg-container-content {
+    flex: 1 1 auto;
+}
