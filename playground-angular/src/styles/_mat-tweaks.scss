@@ -1,0 +1,7 @@
+mat-sidenav-container {
+  &.pg-fixed-backdrop {
+    .mat-drawer-backdrop {
+      position: fixed;
+    }
+  }
+}

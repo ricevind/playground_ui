@@ -1,11 +1,17 @@
 <mat-sidenav-container
+  class="pg-fixed-backdrop"
   [hasBackdrop]="true"
   (backdropClick)="onBackdropClick()"
 >
   <mat-sidenav-content>
-    <router-outlet></router-outlet>
+    <ng-content select="[content]"></ng-content>
   </mat-sidenav-content>
-  <mat-sidenav [opened]="isSidenavOpen$ | async">
+  <mat-sidenav
+    [fixedInViewport]="true"
+    [opened]="isSidenavOpen$ | async"
+    [mode]="'over'"
+    (closedStart)="onClosedStart()"
+  >
     <ng-content select="[sidenav]"></ng-content>
   </mat-sidenav>
 </mat-sidenav-container>

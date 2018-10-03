@@ -1,20 +1,20 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { RouterModule } from "@angular/router";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppComponent } from "./app.component";
-import { LayoutModule } from "./core/layout/layout.module";
-import { SidenavModule } from "./core/sidenav/sidenav.module";
+import { AppRoutingModule } from './routing/app-routing.module';
+import { AppComponent } from './app.component';
+import { LayoutModule } from './core/layout/layout.module';
+import { KaroStatusModule } from './features/karo-status/karo-status.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot([]),
+    AppRoutingModule,
     LayoutModule,
-    SidenavModule
+    KaroStatusModule
   ],
   providers: [],
   bootstrap: [AppComponent]

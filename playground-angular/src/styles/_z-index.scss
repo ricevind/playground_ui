@@ -1,0 +1,5 @@
+@for $z from 1 to 10 {
+  .pg-pull-forward-#{$z} {
+    z-index: 1000 + $z;
+  }
+}

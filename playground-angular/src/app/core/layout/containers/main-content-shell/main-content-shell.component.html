@@ -1,0 +1,15 @@
+<pg-layout-manager>
+  <pg-header
+    header
+    (menuIconClick)="menuIconClicked$.next()"
+  ></pg-header>
+
+  <pg-sidenav-page content>
+    <div content>
+      <router-outlet></router-outlet>
+    </div>
+    <pg-sidenav-navigation sidenav></pg-sidenav-navigation>  
+  </pg-sidenav-page>
+  
+  <pg-footer footer></pg-footer>
+</pg-layout-manager>

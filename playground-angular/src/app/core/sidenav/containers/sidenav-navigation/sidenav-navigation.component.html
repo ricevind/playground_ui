@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>
+      Examples
+    </span>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span>
+      Karo-Status
+    </span>
+    <span class="pg-toolbar-spacer"></span>
+    <button
+      mat-raised-button
+      color='secondary'
+      [routerLink]="['/', navRoutes.KaroStatus]"
+      routerLinkActive='pg-active'
+    >Got to status</button>
+  </mat-toolbar-row>
+</mat-toolbar>
