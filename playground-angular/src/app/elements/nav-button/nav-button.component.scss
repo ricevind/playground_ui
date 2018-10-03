@@ -1,0 +1,10 @@
+@import 'src/styles/colors.scss';
+
+
+:host {
+    display: inline-block;
+}
+
+button.pg-active {
+    background-color: $accent;
+}

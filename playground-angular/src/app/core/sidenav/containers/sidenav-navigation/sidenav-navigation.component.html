@@ -9,11 +9,8 @@
       Karo-Status
     </span>
     <span class="pg-toolbar-spacer"></span>
-    <button
-      mat-raised-button
-      color='secondary'
-      [routerLink]="['/', navRoutes.KaroStatus]"
-      routerLinkActive='pg-active'
-    >Got to status</button>
+    <pg-nav-button [routerLink]="['/', navRoutes.KaroStatus]">
+      Go to status
+    </pg-nav-button>
   </mat-toolbar-row>
 </mat-toolbar>

@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
+
+import { NavButtonModule } from 'app/elements/nav-button/nav-button.module';
 
 import { SidenavPageComponent } from './containers/sidenav-page/sidenav-page.component';
 import { SidenavNavigationComponent } from './containers/sidenav-navigation/sidenav-navigation.component';
+
 
 @NgModule({
   imports: [
@@ -14,8 +16,7 @@ import { SidenavNavigationComponent } from './containers/sidenav-navigation/side
     RouterModule.forChild([]),
     MatSidenavModule,
     MatToolbarModule,
-    MatButtonModule,
-    RouterModule
+    NavButtonModule
   ],
   declarations: [SidenavPageComponent, SidenavNavigationComponent],
   exports: [SidenavPageComponent, SidenavNavigationComponent]
