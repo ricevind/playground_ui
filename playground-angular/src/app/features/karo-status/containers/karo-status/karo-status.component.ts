@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'pg-karo-status',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./karo-status.component.scss']
 })
 export class KaroStatusComponent implements OnInit {
+  karo = new FormControl('karo');
 
   constructor() { }
 
